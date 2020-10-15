@@ -1,0 +1,6 @@
+PyPDF2
+gTTS
+tkinter
+pywin32
+pypiwin32
+pyttsx3==2.6
