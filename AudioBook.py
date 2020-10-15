@@ -4,7 +4,7 @@
 
 # Python packets
 import PyPDF2
-import pyttsx3
+import pyttsx3 # 2.6 version
 import time
 import os
 
@@ -15,7 +15,7 @@ from gtts import gTTS
 
 """
  Program has three modes:
-  1st. Program generates the voice from the win32's communication object and reads the PDF file out loud | if the pyttsx3 module does not work!
+  1st. Program generates the voice from the win32's communication object and reads the PDF file out loud | If the pyttsx3 module does not work!
   2nd. Program uses Google text-to-speech module to generate a audio file from the PDF files text using google's voice | Needs a internet connection!
   3rd. Program uses text-to-speech module to generating the PDF text to voice | Does not need internet connection
  Choose the prefeard mode.
@@ -55,18 +55,15 @@ def audioBook():
 
     print(pdf_text) # Prints the entire PDF files text in the stored pdf file text page to the terminal (not mandatory)
     
-    audio_path = '/Users/jauar/OneDrive/Documents/AudioBooks/%s.mp3' % (file_name) # Path to save the audio file | Change this!
-    
+    audio_path = '../Documents/AudioBooks/%s.mp3' % (file_name) # Path to save the audio file | Change this!
     """
     # Uses win32 communicatio module to generate voise | 1st mode
     textVoice(pdf_text) # Reads everyting in the stored string variable
     
-
     # Generates audio file from the entire PDF file | 2nd mode
     google_speaks = gTTS(text = pdf_text, lang = 'en') # Generates Google voice for the PDF
     google_speaks.save(audio_path) # Saves the PDF as audio file
     """
-
     # Converst the PDF files texts into speech | 3rd mode
     text_speech.say(pdf_text) # Reads the PDF text from the stored strings
     text_speech.runAndWait()
@@ -80,7 +77,7 @@ def main():
     audioBook()
 
 
-# Generates teh total time used by teh program to complete
+# Generates teh total time used by the program to complete the task
 if __name__ == "__main__":
     # Time of main function
     start_time = time.time() # Start time of the main function
