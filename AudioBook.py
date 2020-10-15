@@ -50,7 +50,7 @@ def audioBook():
 
     # Reading the entire PDF book
     for i in range(page_start, page_numbers):
-        page = pdfReader.getPage(i) # Gets the page number
+        page = pdfReader.getPage(i) # Gets the page based on the page number
         pdf_text += page.extractText().replace('\n', ' ') # Extracts and stores the text from entire PDF file into one single string variable
 
     print(pdf_text) # Prints the entire PDF files text in the stored pdf file text page to the terminal (not mandatory)
