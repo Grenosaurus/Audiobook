@@ -15,9 +15,9 @@ from gtts import gTTS
 
 """
  Program has three modes:
-  1st. Program generates the voice from the win32's communication object and reads the PDF file out loud | If the pyttsx3 module does not work!
-  2nd. Program uses Google text-to-speech module to generate a audio file from the PDF files text using google's voice | Needs a internet connection!
-  3rd. Program uses text-to-speech module to generating the PDF text to voice | Does not need internet connection
+  1st. Program generates the voice from the win32's communication object and reads the PDF file | If the pyttsx3 module does not work!
+  2nd. Google text-to-speech module to generate a audio file from the PDF files text using google's voice | Needs a internet connection!
+  3rd. Python's text-to-speech module to generating the PDF text to voice | Does not need internet connection!
  Choose the prefeard mode.
 """
 
