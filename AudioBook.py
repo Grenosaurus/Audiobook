@@ -60,7 +60,7 @@ def audioBook():
     # Uses win32 communicatio module to generate voise | 1st mode
     textVoice(pdf_text) # Reads everyting in the stored string variable
     
-    # Generates audio file from the entire PDF file | 2nd mode
+    # Generates audio file from the entire PDF file | 2nd mode (needs internet connection)
     google_speaks = gTTS(text = pdf_text, lang = 'en') # Generates Google voice for the PDF
     google_speaks.save(audio_path) # Saves the PDF as audio file
     """
