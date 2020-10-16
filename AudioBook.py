@@ -55,7 +55,7 @@ def audioBook():
 
     print(pdf_text) # Prints the entire PDF files text in the stored pdf file text page to the terminal (not mandatory)
     
-    audio_path = '../Documents/AudioBooks/%s.mp3' % (file_name) # Path to save the audio file | Change this!
+    audio_path = '../Documents/AudioBooks/%s.mp3' % (file_name) # Path to save the audio file (used by 2nd mode) | Change this!
     """
     # Uses win32 communicatio module to generate voise | 1st mode
     textVoice(pdf_text) # Reads everyting in the stored string variable
