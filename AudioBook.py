@@ -77,7 +77,7 @@ def main():
     audioBook()
 
 
-# Generates teh total time used by the program to complete the task
+# Generates the total time used by the program to complete the task
 if __name__ == "__main__":
     # Time of main function
     start_time = time.time() # Start time of the main function
